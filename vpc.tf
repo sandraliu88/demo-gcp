@@ -1,8 +1,5 @@
 resource "google_compute_network" "vpc_network" {
-  name = "vpc-network"
-  tags = {
-    purpose = "demo"
-  } 
+  name = "vpc-network" 
 }
 
 
