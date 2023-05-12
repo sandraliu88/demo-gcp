@@ -19,6 +19,12 @@ terraform {
   }
 }
 
+resource "google_service_account" "demo-dev" {
+  account_id   = "hc-3ffaca91386f4ab9b0ec6dc8f23"
+  display_name = "TFC Service account"
+  description  = "app.terraform.io/sandraliu-training/demo-gcp"
+}
+
 provider "doormat" {}
 
 data "doormat_gcp_credentials" "creds" {
